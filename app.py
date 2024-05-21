@@ -2,12 +2,9 @@ import streamlit as st
 import numpy as np 
 import pickle
 
-def load_model():
-    with open('model.pkl', 'rb') as file:
-        model = pickle.load(file)
-    return model
+from joblib import dump, load
+model = load('model.joblib')
 
-model = load_model()
 
 
 st.title("HeartSync :two_hearts:")
