@@ -22,8 +22,9 @@ st.sidebar.write('Explore our Streamlit app designed to analyze compatibility an
 st.sidebar.title(':memo: Author')
 st.sidebar.subheader('Mohammad Ali')
 st.sidebar.title('Connect :link:')
-st.sidebar.link_button('Linkdin :large_blue_diamond:', url='https://www.linkedin.com/in/mohdali02/')
-st.sidebar.link_button('Git-hub :black_large_square:', url='github.com/Mohd-Ali2')
+st.sidebar.markdown('[LinkedIn :large_blue_diamond:](https://www.linkedin.com/in/mohdali02/)')
+st.sidebar.markdown('[Git__Hub :black_large_square:](https://github.com/Mohd-Ali2)')
+
 
 
 
