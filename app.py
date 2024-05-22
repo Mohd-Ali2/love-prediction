@@ -1,7 +1,7 @@
 import streamlit as st 
 import numpy as np 
 import pickle
-from joblib import load
+import joblib
 
 def load_model():
     model = joblib.load('model.joblib')
