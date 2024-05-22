@@ -75,7 +75,7 @@ if st.button('Predict'):
             st.image(r"_3bdc59b5-39e6-4785-9802-0bde1ba9db4a.png", width=180)
             st.success("Congratulations! You have a high compatibility score.")
         else:
-            st.image(r"C_b9453bf1-8f52-4063-96bd-d05ef8c1146e-removebg.png", width=180)
+            st.image(r"sad-frozen.png", width=180)
             st.warning("Unfortunately, your compatibility score is low.")
     except Exception as e:
         st.error(f"Error: {str(e)}")
