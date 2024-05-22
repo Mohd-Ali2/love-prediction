@@ -1,18 +1,17 @@
 import streamlit as st 
 import numpy as np 
 import pickle
-
-from joblib import dump, load
+from joblib import load
 model = load('model.joblib')
 
 
 
 st.title("HeartSync :two_hearts:")
 st.subheader("Analyzing Compatibility for Romantic Connections :revolving_hearts:")
-st.image(r"C:\Users\ali\Downloads\images\close-up-cartoon-character-couple (1).png",width=300, use_column_width=True)
+st.image(r"close-up-cartoon-character-couple (1).png",width=300, use_column_width=True)
 
 
-st.sidebar.image(r"C:\Users\ali\Downloads\images\3d-cartoon-character.png", use_column_width=True)
+st.sidebar.image(r"3d-cartoon-character.png", use_column_width=True)
 st.sidebar.subheader('Welcome to HeartSync :revolving_hearts:')
 st.sidebar.write('Explore our Streamlit app designed to analyze compatibility and predict romantic connections. Developed with passion by Mohammad Ali, this tool combines data science with a touch of romance.')
 st.sidebar.title(':memo: Author')
@@ -67,10 +66,10 @@ if st.button('Predict'):
         prediction = model.predict(reshape)
 
         if prediction == 1:
-            st.image(r"C:\Users\ali\Downloads\_3bdc59b5-39e6-4785-9802-0bde1ba9db4a.png", width=180)
+            st.image(r"_3bdc59b5-39e6-4785-9802-0bde1ba9db4a.png", width=180)
             st.success("Congratulations! You have a high compatibility score.")
         else:
-            st.image(r"C:\Users\ali\Downloads\_b9453bf1-8f52-4063-96bd-d05ef8c1146e-removebg.png", width=180)
+            st.image(r"C_b9453bf1-8f52-4063-96bd-d05ef8c1146e-removebg.png", width=180)
             st.warning("Unfortunately, your compatibility score is low.")
     except Exception as e:
         st.error(f"Error: {str(e)}")
